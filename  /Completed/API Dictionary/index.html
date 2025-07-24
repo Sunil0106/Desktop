@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="user-input-area">
+        <input
+          type="text"
+          class="input-box"
+          id="user-input-word"
+          placeholder="Search a word"
+        />
+        <button id="search" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="api-data hide">
+        <div class="word-content">
+          <h4>Word</h4>
+          <p id="word"></p>
+        </div>
+        <p id="phonetic"></p>
+        <div class="part-of-speech-content">
+          <h4>Part of Speech</h4>
+          <p id="part-of-speech"></p>
+        </div>
+        <div class="showSynonyms-content">
+          <h4>Synonyms</h4>
+          <div class="showSynonyms"></div>
+        </div>
+        <div class="define-content">
+          <h4>Definitions</h4>
+          <p class="define"></p>
+        </div>
+      </div>
+      <p class="error"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

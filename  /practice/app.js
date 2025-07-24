@@ -1,0 +1,29 @@
+//window.location:Can be used  to get the current page address (URL) and to redirect   the browser to a new page
+
+//1.window.location.href: returns the url of the current page
+document.getElementById("demo").innerHTML =
+  "copy address: " + window.location.href;
+console.log(window.location.href);
+
+//2.window.location.hostname: returns the name of the internet host of the current  page
+
+document.getElementById("demo1").innerHTML =
+  "HostName: " + window.location.hostname;
+
+//3.window.location.pathname: return path name of the current page
+document.getElementById("demo2").innerHTML =
+  "Path name: " + window.location.pathname;
+
+//window.location.protocal:return web protocal
+document.getElementById("demo3").innerHTML =
+  "Protocal: " + window.location.protocol;
+
+//Window.location.port: return number of the internet host port of the current page
+document.getElementById("demo4").innerHTML =
+  "host port: " + window.location.port;
+
+//Window.location.assign(): method loads a new document
+
+function newDoc() {
+  window.location.assign("https:/www.w3schools.com");
+}

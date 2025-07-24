@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+.card {
+  background: radial-gradient(#d6772f70);
+  width: 50%;
+  border-radius: 0.22rem;
+  padding: 1rem;
+}
+.card .user-input-area {
+  display: grid;
+  grid-template-columns: 85% 1fr;
+  gap: 10px;
+}
+
+.user-input-area .input-box {
+  font-size: 1rem;
+  padding: 6px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.425);
+  border-radius: 0.3rem;
+}
+.user-input-area .search-btn {
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 6px 15px;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+.user-input-area .search-btn:hover {
+  background: rgba(0, 128, 0, 0.315);
+  color: green;
+}
+.user-input-area .search-btn:active {
+  background: rgb(232, 237, 238);
+  color: black;
+}
+.api-data {
+  display: block;
+}
+
+.word-content,
+.part-of-speech-content,
+.showSynonyms-content,
+.define-content {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.word-content h4,
+.part-of-speech-content h4,
+.showSynonyms-content h4,
+.define-content h4 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
