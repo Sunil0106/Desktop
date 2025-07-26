@@ -30,8 +30,44 @@
 
 //window.history: contains the browsers history
 //1.window.history back
-//-Loads the previous URL in the history list.
-function goBack() {
-  window.history.back();
-}
-document.getElementById("his-back").addEventListener("click", goBack);
+// //-Loads the previous URL in the history list.
+// function goBack() {
+//   window.history.back();
+// }
+// document.getElementById("his-back").addEventListener("click", goBack);
+
+//// The Navigator Object
+//-The navigator object contains information about the visitor's browser
+// window.navigator or navigator
+
+//Browswer Cookies: returns true if cookies are enabled, othewise false
+
+document.querySelector(".cookies").innerHTML =
+  "Navigator: " + navigator.cookieEnabled;
+
+//The browser language;
+document.getElementById("nav-lang").innerHTML = navigator.language;
+
+//is the browser online
+document.getElementById("nav-online").innerHTML = navigator.onLine;
+
+//Browser Application name;
+document.getElementById("nav-app").innerHTML = navigator.appName;
+
+//browser application code name
+document.getElementById("nav-app-code-name").innerHTML = navigator.appCodeName;
+
+//The Browser engine
+document.getElementById("nav-bro-engine-product").innerHTML = navigator.product;
+
+//The browser version
+document.geteElementById("nav-browser-version").innerHTML =
+  navigator.appVersion;
+
+// //The browser agent
+// document.getElementById("nav-browser-agent").innerHTML = navigator.userAgent;
+
+//is java inabled;
+
+document.getElementById("nav-browser-agent").innerHTML =
+  navigator.javaEnabled();
