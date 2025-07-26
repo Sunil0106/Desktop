@@ -36,7 +36,8 @@
 //     priceCents: 1899,
 //   },
 // ];
-
+import { cart } from "../data/cart.js";
+// import { cart as myCart } from "../data/cart.js"; --rename as cart to myCart
 let productsHTML = "";
 
 products.forEach((product) => {
