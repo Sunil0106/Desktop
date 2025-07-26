@@ -38,6 +38,7 @@
 // ];
 import { cart } from "../data/cart.js";
 // import { cart as myCart } from "../data/cart.js"; --rename as cart to myCart
+import { products } from "../data/products.js";
 let productsHTML = "";
 
 products.forEach((product) => {
