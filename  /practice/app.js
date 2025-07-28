@@ -1,26 +1,13 @@
-//Javascript has three kind of popup boxes:
-//1.Alert Box: often used if you want to make sure information comes through to the user
-//syntax: window.alert('someText')
-
-window.alert("I am an alert box!");
-
-//2.Confirm box: If you want to verify or accept something.
-//syntax: window.confirm('someText');
-let txt;
-if (confirm("Press a button!")) {
-  txt = "you pressed OK!";
-} else {
-  txt = "you pressed Cancel!";
+//Timing Event
+//The window object allows execution of code at specified time interval.These time intervals are called timing events
+//1.setTimeout(function, milliseconds)
+function hello() {
+  console.log("hello! khnana khais");
 }
-console.log(txt);
-
-//3.Prompt Box: if you want user to input  a value before entering a page.
-//syntax: window.prompt('sometext','default text')
-let person = prompt("Please enter your name", "username");
-let text;
-if (person === null || person === "") {
-  text = "User cancelled the prompt.";
-} else {
-  text = "Hello " + person + " ! How are you today?";
+//* window.clearTimeout()
+//2.setInterval(function, milliseconds):repeats a given function at every given time-interval
+setInterval(timer, 1000);
+function timer() {
+  const d = new Date();
+  document.getElementById("date").innerHTML = d;
 }
-document.querySelector(".prompt-input-result").innerHTML = text;
