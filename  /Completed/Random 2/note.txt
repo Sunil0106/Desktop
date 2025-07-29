@@ -1,0 +1,11 @@
+apiwebsiteurl:'https://github.com/SBigz/free-food-menus-api'
+
+Api =https://free-food-menus-api-two.vercel.app/<params>
+
+google font:@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  font-family: "Roboto", sans-serif;
+
+  font-awesome:<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  design:https://dribbble.com/shots/25235796-COFFEE-SHOP-WEBSITE-DESIGN
