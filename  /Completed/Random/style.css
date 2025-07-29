@@ -98,7 +98,7 @@ nav {
 }
 .food-image-content {
   width: 100%;
-  height: 250px;
+  height: 400px;
   background: coral;
   overflow: hidden;
 }
@@ -113,4 +113,50 @@ nav {
 }
 .hide {
   display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+  .favorite-recipe img {
+    width: 150px;
+    border: 6px solid rgba(128, 128, 128, 0.527);
+  }
+  .favorite-recipe h5 {
+    font-size: 1rem;
+  }
+  .nav-left-section,
+  .nav-mid-section,
+  .nav-right-section {
+    font-size: 2rem;
+  }
+  .content-box {
+    padding: 10px;
+  }
+  .food-name-star-content {
+    margin: 1.3rem 0;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 810px) and (max-width: 1580px) {
+  .content {
+    max-width: 80%;
+  }
+  .favorite-recipe img {
+    width: 150px;
+    border: 6px solid rgba(128, 128, 128, 0.527);
+  }
+  .favorite-recipe h5 {
+    font-size: 1rem;
+  }
+  .nav-left-section,
+  .nav-mid-section,
+  .nav-right-section {
+    font-size: 2rem;
+  }
+  .content-box {
+    padding: 10px;
+  }
+  .food-name-star-content {
+    margin: 1.3rem 0;
+    font-size: 1.3rem;
+  }
 }
