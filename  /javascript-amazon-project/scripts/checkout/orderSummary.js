@@ -7,13 +7,9 @@ import {
   deliveryOptions,
   getDeliveryOption,
 } from "../../data/deliveryOptions.js";
+import { renderPaymentSummary } from "./paymentSummary.js";
 //default export-another way to exporting , we can use it when we only want to export 1 thing
 //each file can only have 1 default export
-hello();
-const today = dayjs();
-const deliveryDate = today.add(7, "days");
-console.log(deliveryDate.format("dddd, MMMM D"));
-
 export function renderOrderSummary() {
   let cartSummaryHTML = "";
 
@@ -129,6 +125,8 @@ data-delivery-option-id="${deliveryOption.id}">
         `.js-cart-item-container-${productId}`
       );
       container.remove();
+
+      renderPaymentSummary();
     });
   });
 
@@ -138,6 +136,8 @@ data-delivery-option-id="${deliveryOption.id}">
       updateDeliveryOption(productId, deliveryOptionId);
 
       renderOrderSummary();
+
+      renderPaymentSummary();
     });
   });
 }
