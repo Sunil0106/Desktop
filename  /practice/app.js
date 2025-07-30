@@ -1,9 +1,15 @@
-//JavaScript Cookies
-//-are data stored in small text files on your computer;
-function setcookie(cname, cvalue, exdays){
-  const d = new Date();
-  d.setTime(d.getTime()+ (exdays*24*69*60*1000))
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch (error) {
+    document.getElementById("demo").innerHTML = error;
+  }
+}
 
-  let expires ="expires ="+d.toUTCString();
-  document.cookie = cname + '=' + cvalue + ',' expires + "; path"
+function showPosition() {
+  document.getElementById("demo").innerHTML =
+    "latitude: " +
+    position.coords.latitude +
+    "<br>Longitude: " +
+    position.coords.longitude;
 }
