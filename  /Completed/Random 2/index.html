@@ -3,10 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="page">
+      <nav>
+        <div class="nav-bar-area">
+          <div class="nav-logo-area">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </div>
+
+          <div class="nav-list-area">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">COFFEE</a></li>
+              <li><a href="#">BAKERY</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">LOGIN</a></li>
+            </ul>
+          </div>
+
+          <div class="search-area">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="intro-desc-area">
+          <h4>Welcome</h4>
+          <h1>We serve the richest coffee in the city!</h1>
+          <button>Order Now</button>
+        </div>
+      </nav>
+
+      <div class="hero-section"></div>
+
+      <main-content></main-content>
+
+      <div class="explore"></div>
+
+      <div class="user-input-section"></div>
+
+      <footer></footer>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

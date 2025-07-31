@@ -36,4 +36,11 @@ if (formatCurrency(2000.5) === "20.01") {
 
 //2.automated test: use code to test code;
 
+//testing steps
+//a.create test suite
+//b.Create tests
+//c.compare values and display result;
+
 //test suite a group of related test
+
+//testing frameworks: external library that helps us write tests easier
