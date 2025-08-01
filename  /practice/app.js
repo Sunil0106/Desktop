@@ -1,28 +1,13 @@
-// function getLocation() {
-//   try {
-//     navigator.geolocation.getCurrentPosition(showPosition);
-//   } catch (error) {
-//     document.getElementById("demo").innerHTML = error;
-//   }
+//Web History API
+
+//1.The History Back Method:Loads the previous URL in the windows.history list.
+// function myFunction() {
+//   console.log("hello");
+//   window.history.back();
 // }
 
-// function showPosition() {
-//   document.getElementById("demo").innerHTML =
-//     "latitude: " +
-//     position.coords.latitude +
-//     "<br>Longitude: " +
-//     position.coords.longitude;
+//2.The History go() Method:Loads a specific URL from the history list
+// function myFunction() {
+//   console.log("Go back 2 pages");
+//   window.history.go(-2);
 // }
-
-//JavaScript Validation API
-//Constrainnt validation dom Methods
-
-//1.checkValidity():returns true if an input element contains valid data
-function myFunction() {
-  const inpObj = document.querySelector("#id1");
-  if (!inpObj.checkValidity()) {
-    document.querySelector("#demo").innerHTML = inpObj.validationMessage;
-  } else {
-    document.getElementById("demo").innerHTML = "Input OK";
-  }
-}
