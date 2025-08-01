@@ -22,7 +22,7 @@ if (formatCurrency(0) === "0.00") {
 }
 
 console.log("round ups to the nearest cent");
-if (formatCurrency(2000.5) === "20.01") {
+if (formatCurrency(2000.05) === "20.01") {
   console.log("passed");
 } else {
   console.log("failed");
