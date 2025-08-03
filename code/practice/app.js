@@ -11,3 +11,13 @@
 //   console.log("Go back 2 pages");
 //   window.history.go(-2);
 // }
+
+localStorage.setItem("name", "John Cena");
+console.log(localStorage.getItem("name"));
+
+//The localStorage Object
+//The setItem() Method:stores a data item in a storage.takes name and value as parameters
+//The getItem() Method retrieves  a data item from the storage
+
+//The sessionStorage Object:is identical to the localStorage object.sessionStorage object stores data for one session.data is deleted when browser is closed.
+S;
