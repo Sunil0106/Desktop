@@ -46,7 +46,7 @@ const product1 = new Product({
   priceCents: 1090,
   keywords: ["socks", "sports", "apparel"],
 });
-console.log(product1);
+//console.log(product1);
 
 class Clothing extends Product {
   sizeChartLink;
@@ -61,6 +61,53 @@ class Clothing extends Product {
   }
 }
 
+///Built in classes
+/*
+const date = new Date();
+//= .toLocaleTimeString():gives the current time
+console.log(date.toLocaleTimeString());
+console.log(date);
+*/
+/*
+///this
+//if there is no object for "this" to point this=undefined;
+console.log(this);
+
+//object2 has not been created yet. this=undefined
+const object2 = {
+  a: 2,
+  b: this.a,
+};
+*/
+/*
+//use 'this' inside a function
+function logThis() {
+  console.log(this);
+}
+logThis(); //returns undefined but we can set value for this with .call()method
+
+logThis.call("hello"); //it's similar to calling a function but logThis.call('this', param, param)//first param(this)is  value of this
+
+//'this' keeps the value that it had outside the arrow function
+this;
+const object3 = {
+  method: () => {
+    console.log(this);
+  },
+};
+object3.method();
+//in arrow function value of this is whatever outside arrow function
+
+
+///why are arrow functions desinged this way?
+//regular function doesn't pointed the outer object and returns undefined but arrow point towards outer object.
+
+
+//summary of this
+//1.Inside a method 'this' points to the outer object
+//2.inside a function this= undefined but we can change it to whatever we want using .call
+//3.Arro functions do not change the value of 'this'
+*/
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
